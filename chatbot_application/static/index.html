@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospicare</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <img src="../static/data/logo.png" alt="People Place Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#doctors">Doctors</a></li>
+                <li><a href="#appointments">Appointments</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+
+        <div class="hero">
+            <h1>Welcome to Hospicare</h1>
+            <p>Your health is our priority.</p>
+            <a href="#appointments" class="btn">Book an Appointment</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service-card">
+                <img src="../static//data/cardio.jpeg" alt="Cardiology">
+                <h3>Cardiology</h3>
+                <p>Comprehensive heart care services.</p>
+            </div>
+            <div class="service-card">
+                <img src="../static/data/orthopedics.jpeg" alt="Orthopedics">
+                <h3>Orthopedics</h3>
+                <p>Advanced bone and joint treatments.</p>
+            </div>
+            <div class="service-card">
+                <img src="../static/data/neuro.jpeg" alt="Neurology">
+                <h3>Neurology</h3>
+                <p>Expert brain and nervous system care.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section id="doctors" class="doctors-section">
+        <h2>Meet Our Doctors</h2>
+        <div class="doctors">
+            <div class="doctor-card">
+                <img src="../static/data/doctor.png" alt="Dr. John Doe">
+                <h3>Dr. XXX XXX</h3>
+                <p>Cardiologist</p>
+            </div>
+            <div class="doctor-card">
+                <img src="../static/data/doctor.png" alt="Dr. Jane Smith">
+                <h3>Dr. XXX XXX</h3>
+                <p>Orthopedic Surgeon</p>
+            </div>
+            <div class="doctor-card">
+                <img src="../static/data/doctor.png" alt="Dr. Emily Johnson">
+                <h3>Dr. XXX XXX</h3>
+                <p>Neurologist</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Address: City, Country</p>
+        <p>Phone: 1234567890</p>
+        <p>Email: info@Hospicare.com</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 City Hospital. All rights reserved.</p>
+    </footer>
+
+    <!-- Chatbot -->
+    <div class="chatbot" id="chatbot">
+        <div id="chat-window" class="chat-window hidden">
+            <div class="chat-header">
+                <h4>DR.Assist</h4>
+                <span id="close-chat" class="close-chat">&times;</span>
+            </div>
+            <div class="chat-body" id="chat-body">
+                <div class="form-container hidden" id="form-container">
+                    <form id="appointment-form">
+                        <label for="Doctor_name">Doctor Name:</label>
+                        <input type="text" id="Doctor_name" name="Doctor_name">
+                        <label for="Patient_name">Patient Name:</label>
+                        <input type="text" id="Patient_name" name="Patient_name">
+                        <label for="Appointment_type">Appointment Type:</label>
+                        <input type="text" id="Appointment_type" name="Appointment_type">
+                        <label for="Date_time">Date & Time:</label>
+                        <input type="datetime-local" id="Date_time" name="Date_time">
+                        <label for="Patient_mobile">Phone Number:</label>
+                        <input type="tel" id="Patient_mobile" name="Patient_mobile">
+                        <button type="button" id="submit-update">Update</button>
+                    </form>
+                </div>
+                <div class="appointment-card hidden" id="appointment-card"></div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="chat-input" placeholder="Ask something...">
+                <button id="send-button">Send</button>
+            </div>
+        </div>
+        <!-- Floating button -->
+        <div id="chat-button" class="chat-button">
+            <img src="../static/data/chatbot.jpeg" alt="chatbot logo" class="chat-button">
+        </div>
+    </div>
+
+    <script src="/static/index.js"></script>
+</body>
+</html>
